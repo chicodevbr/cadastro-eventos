@@ -1,0 +1,65 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "IBM Plex Mono", monospace;
+}
+
+.cadastra-evento {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid gray;
+  background-color: LightSlateGrey;
+  color: #fff;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+}
+
+.display {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+
+.submit {
+  font-family: "IBM Plex Mono", monospace;
+  background-color: DarkSlateBlue;
+  color: #fff;
+  margin-top: 5px;
+  padding: 3px;
+  border-color: grey;
+}
+
+label {
+  padding: 2px;
+}
+
+input {
+  padding: 3px;
+  margin: 2px;
+  align-content: space-between;
+}
+
+.input {
+  width: 100%;
+  padding: 7px;
+}
+
+.error {
+  font-size: 11px;
+  background-color: #ff0000;
+  color: #fff;
+  padding: 4px;
+  border-radius: 4px;
+}

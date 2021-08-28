@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Cadastro de Eventos</title>
+  </head>
+  <body>
+    <h1>Cadastro de Eventos</h1>
+    <div class="cadastra-evento">
+      <form action="cadastro" method="post" class="valida">
+        <br />
+        <label for="cadastro_evento">Nome do Evento</label>
+        <br />
+        <input
+          id="cadastro_evento"
+          name="cadastro-evento"
+          type="text"
+          data-rules="required|min=2"
+          class="input"
+        />
+        <br />
+        <label for="data_evento">Data do Evento</label>
+        <br />
+        <input
+          type="date"
+          name="data_evento"
+          id="data_evento"
+          data-rules="required|data"
+          class="input"
+        />
+        <br />
+
+        <label for="participantes_evento"
+          >Nome do Participante/Palestrante</label
+        >
+        <br />
+        <input
+          type="text"
+          name="participantes_evento"
+          id="participantes_evento"
+          data-rules="required|min=2"
+          class="input"
+        />
+        <br />
+
+        <input
+          type="radio"
+          id="palestrante"
+          name="tipo_participante"
+          value="Palestrante"
+        />
+        <label for="palestrante">Palestrante</label>
+        <input
+          type="radio"
+          id="participante"
+          name="tipo_participante"
+          value="Participante"
+        />
+        <label for="participante">Participante</label><br />
+
+        <input
+          class="submit input"
+          type="submit"
+          value="Cadastrar"
+          data-rules="vagas"
+        />
+      </form>
+    </div>
+    <div class="display">
+      <p>Total de vagas: <span class="displayVagas"></span></p>
+
+      <p>Vagas restantes: <span class="displayVagasRestantes"></span></p>
+    </div>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
