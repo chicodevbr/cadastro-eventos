@@ -54,6 +54,12 @@ let validador = {
             if (vagasDisponiveis === 0) {
               return "Desculpe, mas o evento já está lotado";
             }
+            break;
+          case "idade":
+            if (input.value < 18) {
+              return "O evento é para maiores de 18 anos";
+            }
+            break;
         }
       }
     }
